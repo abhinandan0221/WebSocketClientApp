@@ -1,0 +1,14 @@
+executable("exec") {
+          sources = [
+                "main.cpp",
+                "webSocketClient.cpp",
+                "CommandLineInterface.cpp",
+                 "CommandLineInterface.h",
+          ]
+          libs = [
+                "boost_system",
+                "ssl",
+                "crypto",
+                "pthread",
+          ]
+}
